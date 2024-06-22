@@ -8,11 +8,11 @@ void main() {
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Color.fromRGBO(173, 20, 87, 1),
-                Color.fromRGBO(244, 94, 159, 1),
-                Color.fromRGBO(255, 145, 193, 1),
-                Color.fromRGBO(244, 94, 159, 1),
-                Color.fromRGBO(173, 20, 87, 1),
+                Color.fromRGBO(10, 128, 114, 1),
+                Color.fromRGBO(57, 198, 182, 1),
+                Color.fromRGBO(116, 228, 208, 1),
+                Color.fromRGBO(57, 198, 182, 1),
+                Color.fromRGBO(10, 128, 114, 1),
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomLeft,
@@ -24,16 +24,29 @@ void main() {
               children: [
                 Image.asset(
                   'assets/images/quiz_logo.png',
-                  width: 250,
+                  width: 200,
                 ),
                 const Padding(
-                  padding: EdgeInsets.only(top: 10),
+                  padding: EdgeInsets.only(top: 20),
                   child: Text(
                     'Quiz App',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 40,
                     ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 400),
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: const Color.fromRGBO(10, 128, 114, 1),
+                      textStyle: const TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                    child: const Text('Start Quiz'),
                   ),
                 ),
               ],
