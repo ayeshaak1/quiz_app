@@ -25,7 +25,7 @@ class StartScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.only(top: 80),
-              child: ElevatedButton(
+              child: ElevatedButton.icon(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
                   foregroundColor: const Color.fromRGBO(6, 115, 103, 1),
@@ -33,7 +33,8 @@ class StartScreen extends StatelessWidget {
                     fontSize: 20,
                   ),
                 ),
-                child: const Text('Start Quiz'),
+                icon: const Icon(Icons.play_arrow_outlined),
+                label: const Text('Start Quiz'),
               ),
             ),
           ],
