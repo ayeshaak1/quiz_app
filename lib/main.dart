@@ -18,13 +18,25 @@ void main() {
               end: Alignment.bottomLeft,
             ),
           ),
-          child: const Center(
-            child: Text(
-              'Quiz App',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 40,
-              ),
+          child: Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Image.asset(
+                  'assets/images/quiz_logo.png',
+                  width: 250,
+                ),
+                const Padding(
+                  padding: EdgeInsets.only(top: 10),
+                  child: Text(
+                    'Quiz App',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 40,
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
         ),
