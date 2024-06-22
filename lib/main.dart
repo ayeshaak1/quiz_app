@@ -8,11 +8,13 @@ void main() {
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Color.fromRGBO(10, 128, 114, 1),
+                Color.fromRGBO(6, 115, 103, 1),
+                Color.fromRGBO(57, 198, 182, 1),
                 Color.fromRGBO(57, 198, 182, 1),
                 Color.fromRGBO(116, 228, 208, 1),
+                Color.fromRGBO(116, 228, 208, 1),
                 Color.fromRGBO(57, 198, 182, 1),
-                Color.fromRGBO(10, 128, 114, 1),
+                Color.fromRGBO(6, 115, 103, 1),
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomLeft,
@@ -37,11 +39,11 @@ void main() {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 400),
+                  padding: const EdgeInsets.only(top: 450),
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      foregroundColor: const Color.fromRGBO(10, 128, 114, 1),
+                      foregroundColor: const Color.fromRGBO(6, 115, 103, 1),
                       textStyle: const TextStyle(
                         fontSize: 20,
                       ),
