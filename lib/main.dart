@@ -10,7 +10,7 @@ void main() {
               colors: [
                 Color.fromRGBO(173, 20, 87, 1),
                 Color.fromRGBO(244, 94, 159, 1),
-                Color.fromRGBO(249, 129, 181, 1),
+                Color.fromRGBO(255, 145, 193, 1),
                 Color.fromRGBO(244, 94, 159, 1),
                 Color.fromRGBO(173, 20, 87, 1),
               ],
@@ -19,7 +19,13 @@ void main() {
             ),
           ),
           child: const Center(
-            child: Text('Quiz App!'),
+            child: Text(
+              'Quiz App',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 40,
+              ),
+            ),
           ),
         ),
       ),
