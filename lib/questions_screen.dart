@@ -43,9 +43,12 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
               height: 30,
             ),
             ...currentQuestion.getShuffledAnswers().map((item) {
-              return AnswerButton(
-                item,
-                answerQuestion,
+              return Padding(
+                padding: const EdgeInsets.all(4),
+                child: AnswerButton(
+                  item,
+                  answerQuestion,
+                ),
               );
             }),
           ],
