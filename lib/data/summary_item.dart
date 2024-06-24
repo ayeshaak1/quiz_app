@@ -34,11 +34,11 @@ class SummaryItem extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              Text(itemData['user_answer'] as String,
+              Text('Your answer: ${itemData['user_answer']}',
                   style: const TextStyle(
                     color: Colors.white,
                   )),
-              Text(itemData['correct_answer'] as String,
+              Text('Correct answer: ${itemData['correct_answer']}',
                   style: const TextStyle(
                     color: Colors.white,
                   )),
