@@ -20,29 +20,34 @@ class SummaryItem extends StatelessWidget {
         ),
         const SizedBox(width: 20),
         Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                itemData['question'] as String,
-                style: GoogleFonts.quicksand(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+          child: Padding(
+            padding: const EdgeInsets.only(bottom: 22),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  itemData['question'] as String,
+                  style: GoogleFonts.quicksand(
+                    color: const Color.fromRGBO(6, 115, 103, 1),
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              Text('Your answer: ${itemData['user_answer']}',
-                  style: const TextStyle(
-                    color: Colors.white,
-                  )),
-              Text('Correct answer: ${itemData['correct_answer']}',
-                  style: const TextStyle(
-                    color: Colors.white,
-                  )),
-            ],
+                const SizedBox(
+                  height: 10,
+                ),
+                Text('Your answer: ${itemData['user_answer']}',
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                    )),
+                Text('Correct answer: ${itemData['correct_answer']}',
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                    )),
+              ],
+            ),
           ),
         )
       ],
