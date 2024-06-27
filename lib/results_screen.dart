@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:quiz_app/openai_service.dart';
 import 'package:quiz_app/questions_summary.dart';
 import 'package:quiz_app/questions_screen.dart';
 

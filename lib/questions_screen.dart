@@ -3,7 +3,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:quiz_app/openai_service.dart';
 import 'package:quiz_app/models/quiz_question.dart';
 import 'package:quiz_app/answer_button.dart';
-import 'package:quiz_app/results_screen.dart';
 
 class QuestionsScreen extends StatefulWidget {
   const QuestionsScreen({super.key, required this.onSelectAnswer});
