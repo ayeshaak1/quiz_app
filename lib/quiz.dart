@@ -24,7 +24,7 @@ class _QuizState extends State<Quiz> {
   }
 
   void chooseAnswer(String answer) {
-    int questionsLen = Random().nextInt(3) + 3;
+    int questionsLen = Random().nextInt(5) + 3;
 
     selectedAnswers.add(answer);
 
