@@ -39,8 +39,12 @@ class OpenAIService {
       if (data.containsKey('choices') && data['choices'].isNotEmpty) {
         String text = data['choices'][0]['message']['content'].trim();
 
+        // Sanitize text to handle special characters
+        text = text.replaceAll(RegExp(r'\s+'), ' ').trim();
+
         RegExp regex = RegExp(
-            r'Question: (.+)\? Correct answer: (.+)\. Incorrect answers: (.+), (.+), (.+)\.');
+            r'Question: (.+?)\? ?Correct answer: (.+?)\. ?Incorrect answers: (.+?), (.+?), (.+?)\.',
+            dotAll: true);
         Match? match = regex.firstMatch(text);
 
         if (match != null && match.groupCount == 5) {
