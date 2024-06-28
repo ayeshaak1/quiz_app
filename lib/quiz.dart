@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:quiz_app/questions_screen.dart';
 import 'package:quiz_app/start_screen.dart';
 import 'package:quiz_app/results_screen.dart';
+import 'dart:math';
 
 class Quiz extends StatefulWidget {
   const Quiz({super.key});
@@ -23,9 +24,11 @@ class _QuizState extends State<Quiz> {
   }
 
   void chooseAnswer(String answer) {
+    int questionsLen = Random().nextInt(3) + 3;
+
     selectedAnswers.add(answer);
 
-    if (selectedAnswers.length == 3) {
+    if (selectedAnswers.length == questionsLen) {
       setState(() {
         activeScreen = ResultsScreen(
           chosenAnswers: selectedAnswers,

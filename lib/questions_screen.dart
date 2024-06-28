@@ -39,7 +39,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
     }
 
     try {
-      final QuizQuestion data = await openAIService.generateQuizQuestion('UFC');
+      final QuizQuestion data = await openAIService.generateQuizQuestion('music');
       QuestionsScreen.quizSummary.add(data);
       if (mounted) {
         setState(() {
@@ -78,7 +78,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        _currentQuestion!.text,
+                        '${_currentQuestion!.text}?',
                         style: GoogleFonts.quicksand(
                           color: const Color.fromRGBO(0, 90, 79, 1),
                           fontSize: 22,
